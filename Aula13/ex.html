@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex da aula 13</title>
+ </head>
+ <body>
+
+
+
+    <script>
+     const nome =  window.prompt("Digite seu nome completo")
+    //012345678910
+    //João Santos
+    document.body.innerHTML = `O seu nome é <strong>${nome}</strong> <br/ >`;
+    document.body.innerHTML += `Seu nome tem <strong>${nome.length}</strong> letras <br/>`;
+    document.body.innerHTML += `A segunda letra do seu nome é <strong>${nome[1]}</strong><br/>`; // poderia usar CharAt
+    document.body.innerHTML += `Qual o primeiro indice da letra "a" do seu nome? <strong>${nome.indexOf('a')}</strong> <br/>`; 
+    document.body.innerHTML += `Qual o ultimo indice da letra "a" do seu nome? <strong>${nome.lastIndexOf('a')}</strong><br>`;
+    document.body.innerHTML += `As 3 ultimas letras do seu nome são <strong>${nome.slice(-3)}</strong><br/>`; // ${nome.slice(8, 11)}
+    document.body.innerHTML += `As palavras do seu nome são <strong>${nome.split(' ')}</strong><br/>`;
+    document.body.innerHTML += `Seu nome com letras maiusculas: <strong>${nome.toUpperCase()}</strong><br/>`;
+    document.body.innerHTML += `Seu nome com letras minusculas: <strong>${nome.toLocaleLowerCase()}</strong><br/>`;
+
+    </script>
+ </body>
+ </html>
