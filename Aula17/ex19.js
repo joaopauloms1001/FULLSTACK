@@ -40,7 +40,8 @@ const raiz2 = (n1) => {
     return n1 **0.5;
 }; 
 /* entao isso acima se reduz a isso:
-const raiz2 = (n1) => n1 ** 0.5*/
+const raiz2 = (n1) => n1 ** 0.5
+*/
 
 console.log(raiz2(25));
 console.log(raiz2(1024));
