@@ -5,6 +5,7 @@ const pessoa = {
     endereco: {
         rua: 'Jose ribeiro',
         numero: 4529,
+        bairro: 'noemia',
     }
     
 }
@@ -23,5 +24,10 @@ const {endereco: {rua, numero}} = pessoa;
 console.log(rua, numero);
 
 //ou pode extrair o endereço completo
-const {endereco,} = pessoa
+const {endereco} = pessoa
 console.log(endereco);
+
+//semelhante ao array posso pegar o "resto"  com a propriedade resto
+
+const {idade, ...resto} = pessoa;
+console.log(idade, resto);
