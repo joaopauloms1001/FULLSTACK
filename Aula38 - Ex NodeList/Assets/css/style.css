@@ -56,12 +56,3 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
-
-h1{
-  text-align: center;
-}
-
-main{
-  text-align: center;
-  word-spacing: 50px;
-}
